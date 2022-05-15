@@ -8,12 +8,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-static const double BENCHMARK_TIME = 5.0;
+static const double BENCHMARK_TIME = 3.0;
 
 // Note: The maximum number of files in a folder for different file systems:
 //  - 65534 (FAT32)
 //  - 4294967295 (NTFS, ext4)
-static const int NUM_FILES = 65534;
+static const int NUM_FILES = 256;
 
 static double my_log2(double x) {
   static const double LOG2SCALE = 1.442695040888963;  // 1.0 / log(2.0);
